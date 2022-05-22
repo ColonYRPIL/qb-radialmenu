@@ -16,6 +16,27 @@ Config.MenuItems = {
                 event = 'qb-phone:client:GiveContactDetails',
                 shouldClose = true
             }, {
+                id = 'vehicleflip',
+                title = 'Flip Vehicle',
+                icon = 'car-crash',
+                type = 'client',
+                event = 'vehicle:flipit',
+                shouldClose = true
+            }, {
+                id = 'calc',
+                title = 'Calculator',
+                icon = 'calculator',
+                type = 'command',
+                event = 'calc',
+                shouldClose = true
+            }, {
+                id = 'checkvehstatus',
+                title = 'Check Vehicle Tune',
+                icon = 'car-battery',
+                type = 'client',
+                event = 'qb-tunerchip:client:TuneStatus',
+                shouldClose = true
+            }, {
                 id = 'getintrunk',
                 title = 'Get In Trunk',
                 icon = 'car',
@@ -457,6 +478,22 @@ Config.VehicleSeats = {
 Config.JobInteractions = {
     ["ambulance"] = {
         {
+            id = 'mdt',
+            title = 'MDT',
+            icon = 'tablet-alt',
+            type = 'command',
+            event = 'mdt',
+            shouldClose = true
+        },
+        {
+            id = 'showid',
+            title = 'Show Badge',
+            icon = 'address-card',
+            type = 'command',
+            event = 'showid',
+            shouldClose = true
+        },
+        {
             id = 'statuscheck',
             title = 'Check Health Status',
             icon = 'heartbeat',
@@ -567,6 +604,30 @@ Config.JobInteractions = {
     },
     ["police"] = {
         {
+            id = 'mdt',
+            title = 'MDT',
+            icon = 'tablet-alt',
+            type = 'command',
+            event = 'mdt',
+            shouldClose = true
+        },
+        {
+            id = 'Activeofficers',
+            title = 'Active Officers',
+            icon = 'user-shield',
+            type = 'command',
+            event = 'plist',
+            shouldClose = true
+        },
+        {
+            id = 'showid',
+            title = 'Show Badge',
+            icon = 'address-card',
+            type = 'command',
+            event = 'showid',
+            shouldClose = true
+        },
+        {
             id = 'emergencybutton',
             title = 'Emergency button',
             icon = 'bell',
@@ -594,6 +655,83 @@ Config.JobInteractions = {
             type = 'client',
             event = 'police:client:SeizeDriverLicense',
             shouldClose = true
+        }, {
+            id = 'policeradiochannels',
+            title = 'Police Radio Channels',
+            icon = 'broadcast-tower',
+            items = {
+                {
+                    id = 'joinradio1',
+                    title = 'Channel 1',
+                    icon = 'broadcast-tower',
+                    type = 'client',
+                    event = 'qb-radio:client:JoinRadioChannel1',
+                    shouldClose = true
+                }, {
+                    id = 'joinradio2',
+                    title = 'Channel 2',
+                    icon = 'broadcast-tower',
+                    type = 'client',
+                    event = 'qb-radio:client:JoinRadioChannel2',
+                    shouldClose = true
+                }, {
+                    id = 'joinradio3',
+                    title = 'Channel 3',
+                    icon = 'broadcast-tower',
+                    type = 'client',
+                    event = 'qb-radio:client:JoinRadioChannel3',
+                    shouldClose = true
+                }, {
+                    id = 'joinradio4',
+                    title = 'Channel 4',
+                    icon = 'broadcast-tower',
+                    type = 'client',
+                    event = 'qb-radio:client:JoinRadioChannel4',
+                    shouldClose = true
+                }, {
+                    id = 'joinradio5',
+                    title = 'Channel 5',
+                    icon = 'broadcast-tower',
+                    type = 'client',
+                    event = 'qb-radio:client:JoinRadioChannel5',
+                    shouldClose = true
+                }, {
+                    id = 'joinradio6',
+                    title = 'Channel 6',
+                    icon = 'broadcast-tower',
+                    type = 'client',
+                    event = 'qb-radio:client:JoinRadioChannel6',
+                    shouldClose = true
+                }, {
+                    id = 'joinradio7',
+                    title = 'Channel 7',
+                    icon = 'broadcast-tower',
+                    type = 'client',
+                    event = 'qb-radio:client:JoinRadioChannel7',
+                    shouldClose = true
+                }, {
+                    id = 'joinradio8',
+                    title = 'Channel 8',
+                    icon = 'broadcast-tower',
+                    type = 'client',
+                    event = 'qb-radio:client:JoinRadioChannel8',
+                    shouldClose = true
+                }, {
+                    id = 'joinradio9',
+                    title = 'Channel 9',
+                    icon = 'broadcast-tower',
+                    type = 'client',
+                    event = 'qb-radio:client:JoinRadioChannel9',
+                    shouldClose = true
+                }, {
+                    id = 'joinradio10',
+                    title = 'Channel 10',
+                    icon = 'broadcast-tower',
+                    type = 'client',
+                    event = 'qb-radio:client:JoinRadioChannel10',
+                    shouldClose = true
+                },
+            }
         }, {
             id = 'policeinteraction',
             title = 'Police Actions',
